@@ -324,10 +324,10 @@ SENHA
 SENHA
 EOF
 
-sudo smbpasswd -a USUARIO2 <<EOF
-SENHA
-SENHA
-EOF
+#sudo smbpasswd -a USUARIO2 <<EOF
+#SENHA
+#SENHA
+#EOF
 
 echo ""
 echo "Reiniciando o serviço Samba..."
