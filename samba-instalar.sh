@@ -90,7 +90,7 @@ sudo tee /etc/samba/smb.conf > /dev/null << EOF
 EOF
 
 echo ""
-echo "Adicionando usuário 'web' ao sistema..."
+echo "Adicionando usuário ao sistema..."
 # Verificar se o usuário já existe, se não, criar
 if ! id "web" &>/dev/null; then
     sudo adduser --system --no-create-home --group web
@@ -100,11 +100,11 @@ else
 fi
 
 echo ""
-echo "Configurando senha do Samba para o usuário 'web'..."
+echo "Configurando senha do Samba para o usuário..."
 echo "Por favor, digite a senha 'SENHA' quando solicitado:"
-sudo smbpasswd -a USUARIO1 <<EOF
-SENHA
-SENHA
+sudo smbpasswd -a usuario <<EOF
+COLOCAR_SENHA_AQUI
+COLOCAR_SENHA_AQUI
 EOF
 
 #sudo smbpasswd -a USUARIO2 <<EOF
@@ -146,4 +146,4 @@ apt autoremove --purge -y
 apt clean
 apt autoclean
 
-echo "(!) Script finalizado - instalado samba
+echo "(!) Script finalizado - Samba instalado
