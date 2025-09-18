@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Script para instalar e configurar samba
-# e configurar permissões
+# Script para instalar e configurar samba 
+# EDITE USUARIO E SENHA QUE SERA INSERIDO NO SISTEMA E SAMBA
 
 set -euo pipefail
 
@@ -146,4 +146,7 @@ apt autoremove --purge -y
 apt clean
 apt autoclean
 
+echo " "
+/etc/init.d/smbd status
+echo " "
 echo "(!) Script finalizado - Samba instalado
