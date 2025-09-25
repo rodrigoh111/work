@@ -2,8 +2,9 @@
 set -e
 
 # Lista de pacotes essenciais
+# nethogs iftop screen zip unrar testdisk fdupes  pipx jq yq 
 PACOTES_ESSENCIAIS=(
-    htop iotop nethogs iftop dstat ncdu
+    htop iotop dstat ncdu
     net-tools iputils-ping dnsutils traceroute
     curl wget aria2 ssh openssh-client openssh-server
     software-properties-common apt-transport-https
@@ -12,7 +13,7 @@ PACOTES_ESSENCIAIS=(
     plocate
     lshw inxi lsof strace hdparm
     python3 python3-pip python3-venv python3-dev
-    pipx jq yq tmux screen zip unrar testdisk fdupes
+    tmux 
 )
 
 echo "[INFO] Atualizando lista de pacotes..."
