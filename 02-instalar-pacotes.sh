@@ -6,7 +6,7 @@ set -e
 PACOTES_ESSENCIAIS=(
     htop iotop dstat ncdu
     net-tools iputils-ping dnsutils traceroute
-    curl wget aria2 ssh openssh-client openssh-server
+    curl wget aria2 ssh openssh-client openssh-server gnupg2
     software-properties-common apt-transport-https
     ca-certificates gnupg lsb-release ubuntu-restricted-extras
     build-essential
