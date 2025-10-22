@@ -1,0 +1,2 @@
+docker run -d -p 7083:80 -m 8196M --cpus 6.0 --pids-limit=500 --restart always   --env TZ=America/Sao_Paulo  --volume=/var/www:/var/www/  --volume=/var/log/life/:/var/log/life/  --mount type=bind,source=/mnt/volumes/temp/,target=/tmp     --mount type=bind,source=/mnt/volumes/cache/,target=/var/cache     --mount type=bind,source=/mnt/volumes/tmp/,target=/var/tmp  --mount type=bind,source=/mnt/volumes/log/apache2/7083,target=/var/log/apache2 php8-v3
+
