@@ -12,6 +12,7 @@ PACOTES_ESSENCIAIS=(
     build-essential
     nfs-common nfs-kernel-server
     plocate
+    lvm2
     lshw inxi lsof strace hdparm
     python3 python3-pip python3-venv python3-dev
     tmux 
